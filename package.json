@@ -34,5 +34,8 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.2.0",
     "sinon": "^4.2.1"
+  },
+  "dependencies": {
+    "jsdom": "^11.6.1"
   }
 }
