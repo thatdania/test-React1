@@ -16,7 +16,7 @@ describe('CommentList', () => {
 
   wrapper.setState({ comments: ['hello'] });
   wrapper.find('button').simulate('click');
-  expect(wrapper.state().comments[0]).to.equal('olleh');
+  expect(wrapper.state().comments[0]).to.equal('hello');
   });
 
 
