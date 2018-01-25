@@ -4,7 +4,10 @@
   "description": "This repo was made to understand how to setup testing frameworks with React and also to understand how to execute different tests. As you can test React with jest and enzyme as well, this is therefore one way to do testing.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-register --require ./test/helpers.js --require ./test/dom.js --recursive",
+    "tdd": "npm test -- --watch",
+    "dev": "webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
